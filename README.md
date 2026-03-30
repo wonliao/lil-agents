@@ -10,6 +10,12 @@ Supports **Claude Code**, **OpenAI Codex**, **GitHub Copilot**, and **Google Gem
 
 **[Download for macOS](https://lilagents.xyz)** · [Website](https://lilagents.xyz)
 
+## frieren showcase
+
+This video demonstrates the Frieren character effect in this project:
+
+<img src="docs/frieren-showcase.gif" alt="Frieren showcase effect" width="266" height="284" />
+
 ## features
 
 - Animated characters rendered from transparent HEVC video
