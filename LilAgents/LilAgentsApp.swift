@@ -45,6 +45,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         char2Item.state = .on
         menu.addItem(char2Item)
 
+        let char3Item = NSMenuItem(title: "Frieren", action: #selector(toggleChar3), keyEquivalent: "3")
+        char3Item.state = .on
+        menu.addItem(char3Item)
+
+        let char4Item = NSMenuItem(title: "Student", action: #selector(toggleChar4), keyEquivalent: "4")
+        char4Item.state = .on
+        menu.addItem(char4Item)
+
         menu.addItem(NSMenuItem.separator())
 
         let soundItem = NSMenuItem(title: "Sounds", action: #selector(toggleSounds(_:)), keyEquivalent: "")
@@ -196,6 +204,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func toggleChar2(_ sender: NSMenuItem) {
         guard let chars = controller?.characters, chars.count > 1 else { return }
         let char = chars[1]
+        if char.isManuallyVisible {
+            char.setManuallyVisible(false)
+            sender.state = .off
+        } else {
+            char.setManuallyVisible(true)
+            sender.state = .on
+        }
+    }
+
+    @objc func toggleChar3(_ sender: NSMenuItem) {
+        guard let chars = controller?.characters, chars.count > 2 else { return }
+        let char = chars[2]
+        if char.isManuallyVisible {
+            char.setManuallyVisible(false)
+            sender.state = .off
+        } else {
+            char.setManuallyVisible(true)
+            sender.state = .on
+        }
+    }
+
+    @objc func toggleChar4(_ sender: NSMenuItem) {
+        guard let chars = controller?.characters, chars.count > 3 else { return }
+        let char = chars[3]
         if char.isManuallyVisible {
             char.setManuallyVisible(false)
             sender.state = .off

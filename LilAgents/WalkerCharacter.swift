@@ -14,7 +14,7 @@ class WalkerCharacter {
     var displayWidth: CGFloat { displayHeight * (videoWidth / videoHeight) }
 
     // Walk timing (per-character, from frame analysis)
-    let videoDuration: CFTimeInterval = 10.0
+    var videoDuration: CFTimeInterval = 10.0
     var accelStart: CFTimeInterval = 3.0
     var fullSpeedStart: CFTimeInterval = 3.75
     var decelStart: CFTimeInterval = 7.5
