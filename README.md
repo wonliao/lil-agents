@@ -19,6 +19,8 @@ This video demonstrates the Frieren character effect in this project:
 ## features
 
 - Animated characters rendered from transparent HEVC video
+- Drag characters horizontally to reposition them above the dock
+- Optional "walk-in-place" behavior (play walking animation without auto-moving position)
 - Click a character to chat with AI in a themed popover terminal
 - Switch between Claude, Codex, Copilot, and Gemini from the menubar
 - Four visual themes: Peach, Midnight, Cloud, Moss
